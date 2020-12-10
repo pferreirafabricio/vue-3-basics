@@ -1,7 +1,6 @@
 <template>
   <section>
-    <nav class="menu">
-      {{ count }}
+    <nav class="menu" @click="show('Fabreco')">
       <a href="#">
         <i class="fas fa-search"></i>
       </a>
@@ -16,18 +15,24 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from 'vue';
+import { computed, defineComponent, ref } from 'vue';
+import showName from '@/functions/show';
 
 export default defineComponent({
   name: 'Menu',
   setup() {
     const count = ref<number>(0);
+    const myName = computed(() => `My name is ${count.value}`);
+    const show = showName;
 
     return {
       count,
+      myName,
+      show,
     };
   },
 });
+
 </script>
 
 <style scoped>
