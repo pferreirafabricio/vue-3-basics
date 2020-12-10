@@ -1,0 +1,9 @@
+:root {
+    --dark:  rgb(28, 28, 28);
+    --dark-alpha:  rgba(28, 28, 28, 0.4);
+
+    --font-small: 12px;
+    --font-medium: 16px;
+    --font-large: 20px;
+    --font-extra-large: 24px;
+}
