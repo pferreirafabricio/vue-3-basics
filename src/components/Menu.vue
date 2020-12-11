@@ -15,20 +15,15 @@
 </template>
 
 <script lang="ts">
-import { computed, defineComponent, ref } from 'vue';
-import showName from '@/functions/show';
+import { defineComponent, ref } from 'vue';
 
 export default defineComponent({
   name: 'Menu',
   setup() {
     const count = ref<number>(0);
-    const myName = computed(() => `My name is ${count.value}`);
-    const show = showName;
 
     return {
       count,
-      myName,
-      show,
     };
   },
 });

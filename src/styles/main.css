@@ -7,3 +7,8 @@
     --font-large: 20px;
     --font-extra-large: 24px;
 }
+
+article {
+    border: 1px solid var(--dark);
+    border-radius: 4px;
+}

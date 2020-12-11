@@ -1,22 +1,18 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <Menu />
+  <Main />
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import Menu from './components/Menu.vue';
+import Main from './views/Main.vue';
 
 export default defineComponent({
+  components: { Main },
   name: 'App',
-  components: {
-    Menu,
-  },
 });
 </script>
 
 <style>
-@import '/css/all.css';
 @import './styles/main.css';
 
 #app {
