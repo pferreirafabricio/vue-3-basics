@@ -1,6 +1,6 @@
 <template>
   <article>
-    <h2>Computed Properties</h2>
+    <h2>Computed Properties and props</h2>
     <span>
       {{ myName }}
     </span>

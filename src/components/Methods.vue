@@ -1,11 +1,11 @@
 <template>
   <article>
-    <h2>Methods</h2>
+    <h2>Methods and data</h2>
     <div>
-      <button @click="toggleTextDisplay">Click me</button>
+      <button class="button font-weight-bold" @click="toggleTextDisplay">Click me</button>
       <transition name="fade">
-        <span v-if="show" class="d-block">
-          {{ clickedText }} &#x1F423;
+        <span v-if="show">
+          &nbsp; {{ clickedText }} &#x1F423;
         </span>
       </transition>
     </div>
@@ -33,3 +33,13 @@ export default defineComponent({
   },
 });
 </script>
+
+<style scoped>
+.button {
+  background: var(--green-gradient);
+  border: none;
+  width: 120px;
+  height: 24px;
+  box-shadow: 0 4px 10px var(--green-alpha);
+}
+</style>
